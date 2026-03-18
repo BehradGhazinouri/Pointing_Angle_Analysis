@@ -1,7 +1,7 @@
 from beam_analyzer import BeamAnalyzer
 
-Folder_address82 = r'C:\Users\bghazinouri\Documents\Pointing\82'
-Folder_address235 = r'C:\Users\bghazinouri\Documents\Pointing\235'
+Folder_address82 = r'F:\Users\GENERAL\TEMP\Behrad\ASML\Hex2GRIN\acquisition\acquisituin_pupil\340004\POINTING\4\big'
+Folder_address235 = r'F:\Users\GENERAL\TEMP\Behrad\ASML\Hex2GRIN\acquisition\acquisituin_pupil\340004\POINTING\4\small'
 
 analyzer82=BeamAnalyzer(Folder_address82)
 analyzer235=BeamAnalyzer(Folder_address235)
@@ -28,9 +28,9 @@ for res in analyzer235.results:
     print(f"\n Radius:{res['radius']}")
 
 
-analyzer82.analyze_groups(700) #value is something inbetween the radius in Z1 and Z2 positions
-analyzer235.analyze_groups(700)
+analyzer82.analyze_groups() 
+analyzer235.analyze_groups()
 
 
-analyzer82.Pointing(700)
-analyzer235.Pointing(700)
+analyzer82.Pointing()
+analyzer235.Pointing()
